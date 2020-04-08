@@ -1,4 +1,7 @@
-package hinhtron;
+package hinh;
+
+import java.util.Scanner;
+
 public class HinhTron 
 {
 	private double bankinh;
@@ -12,6 +15,11 @@ public class HinhTron
 	public double getBankinh()
 	{
 		return bankinh; 
+	}
+	public void input() {
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Nhap ban kinh: ");
+		setBankinh(kb.nextDouble());
 	}
 	public double dientich()
 	{
